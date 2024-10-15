@@ -6,4 +6,6 @@ Content-Type: Application/json
   "message": "You spent Rs.120 on ICICI bank card for starbucks coffee"
 }
 
-###
+### GET health check
+GET http://localhost:5000/
+

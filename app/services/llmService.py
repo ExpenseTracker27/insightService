@@ -1,6 +1,7 @@
 import os
-from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.prompts import ChatPromptTemplate
 from langchain_mistralai import ChatMistralAI
+from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
 from app.entities.expense import Expense
@@ -22,8 +23,10 @@ class LLMService:
                     "{text}"
                 )
             ])
-        self.apikey = os.getenv("MISTRAL_API_KEY")
-        self.llm = ChatMistralAI(api_key=self.apikey, model="mistral-large-latest")
+        # self.apikey = os.getenv("MISTRAL_API_KEY")
+        # self.llm = ChatMistralAI(api_key=self.apikey, model="mistral-large-latest")
+        self.api_key = os.getenv("OPENAI_API_KEY")
+        self.llm = ChatOpenAI(api_key=self.api_key, model="gpt-3.5-turbo")
         self.runnable = self.prompt | self.llm.with_structured_output(schema=Expense)
 
     def run_llm(self, message):
