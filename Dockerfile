@@ -9,6 +9,4 @@ ENV FLASK_APP=app/app.py
 ENV FLASK_RUN_HOST=0.0.0.0
 ENV FLASK_ENV=development
 
-EXPOSE 5000
-
 CMD ["flask", "run"]
