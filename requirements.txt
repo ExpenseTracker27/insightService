@@ -1,5 +1,7 @@
 langchain
 langchain-openai
 langchain-core
-langchain_community
+langchain-community
+langchain-mistralai
 flask
+python-dotenv
