@@ -1,10 +1,11 @@
-from flask import Flask, request, json
-from langchain.chains.question_answering.map_reduce_prompt import messages
+from flask import Flask, request, jsonify
+from app.services.messageService import MessageService
+
 
 app = Flask(__name__)
+messageService = MessageService()
 
-
-@app.route('/')
+@app.route('/', methods=['GET'])
 def hello_world():
     return 'Hello World! from insight service'
 
@@ -12,7 +13,7 @@ def hello_world():
 def insight_message():
     message = request.json.get('message')
     result = messageService.process_message(message)
-
+    return jsonify(result)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="localhost", port=5000, debug=True)

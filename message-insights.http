@@ -1,0 +1,9 @@
+### POST message insight
+POST http://localhost:5000/insight/v1/message
+Content-Type: Application/json
+
+{
+  "message": "You spent Rs.120 on ICICI bank card for starbucks coffee"
+}
+
+###
