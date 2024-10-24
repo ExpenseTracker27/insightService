@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="605d9802-7fa6-412b-a212-a98042d04bb5" name="Changes" comment="added gitignore">
+    <list default="true" id="605d9802-7fa6-412b-a212-a98042d04bb5" name="Changes" comment="added kafkaProducer.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +17,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Flask Main" />
-        <option value="Python Script" />
         <option value="HTTP Request" />
         <option value="Dockerfile" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -140,6 +141,18 @@
       <updated>1728990440309</updated>
       <workItem from="1728990450958" duration="6619000" />
       <workItem from="1729001545681" duration="2886000" />
+      <workItem from="1729011042253" duration="1712000" />
+      <workItem from="1729022322953" duration="149000" />
+      <workItem from="1729023312556" duration="28000" />
+      <workItem from="1729023930480" duration="29000" />
+      <workItem from="1729024304265" duration="61000" />
+      <workItem from="1729025515120" duration="129000" />
+      <workItem from="1729025841672" duration="87000" />
+      <workItem from="1729027514377" duration="7000" />
+      <workItem from="1729704666566" duration="5000" />
+      <workItem from="1729756913574" duration="521000" />
+      <workItem from="1729757757586" duration="247000" />
+      <workItem from="1729761185057" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <option name="closed" value="true" />
@@ -189,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729002831254</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added kafkaProducer.py">
+      <option name="closed" value="true" />
+      <created>1729012741856</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729012741856</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,9 +225,10 @@
     <MESSAGE value="added Expense schema" />
     <MESSAGE value="added Dockerfile" />
     <MESSAGE value="added gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="added gitignore" />
+    <MESSAGE value="added kafkaProducer.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added kafkaProducer.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/InsightService$InsightService.coverage" NAME="InsightService Coverage Results" MODIFIED="1729003436742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/InsightService$InsightService.coverage" NAME="InsightService Coverage Results" MODIFIED="1729012465575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
