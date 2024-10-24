@@ -1,4 +1,4 @@
-import json
+import logging
 from flask import Flask, request, jsonify
 from app.models.expense import Expense
 from app.services.messageService import MessageService
@@ -21,7 +21,7 @@ def insight_message():
     try:
         result = messageService.process_message(message)
     except Exception as e:
-        print("Error with OPENAI API:", e)
+        logging.error(f"Error with OPENAI API: {e}")
         result = Expense(amount="75.50", merchant="Coffee Shop", currency="USD")
 
     result_dict = result.model_dump()
@@ -30,4 +30,4 @@ def insight_message():
     return jsonify(result_dict)
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
