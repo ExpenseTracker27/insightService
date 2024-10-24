@@ -3,10 +3,8 @@ from flask import Flask, request, jsonify
 from app.models.expense import Expense
 from app.services.messageService import MessageService
 from app.utils.kafkaProducer import send_to_queue, KAFKA_TOPIC
-from dotenv import load_dotenv
 
 app = Flask(__name__)
-load_dotenv()
 messageService = MessageService()
 
 @app.route('/', methods=['GET'])

@@ -107,10 +107,10 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Docker.Docker Image" />
+      <item itemvalue="Flask server.InsightService" />
       <item itemvalue="HTTP Request.message-insights | GET health check" />
       <item itemvalue="HTTP Request.message-insights | POST message insight" />
-      <item itemvalue="Flask server.InsightService" />
-      <item itemvalue="Docker.Docker Image" />
     </list>
     <recent_temporary>
       <list>

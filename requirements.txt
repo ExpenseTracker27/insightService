@@ -4,6 +4,5 @@ langchain-core~=0.3.10
 langchain-community
 langchain-mistralai
 flask~=3.0.3
-python-dotenv~=1.0.1
 pydantic~=2.9.2
 kafka-python
