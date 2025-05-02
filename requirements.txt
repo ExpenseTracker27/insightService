@@ -1,8 +1,8 @@
-langchain
-langchain-openai
-langchain-core~=0.3.10
-langchain-community
-langchain-mistralai
-flask~=3.0.3
-pydantic~=2.9.2
-kafka-python
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.9.0
+pydantic-settings>=2.3.0
+langchain-core>=0.3.10
+langchain-openai>=0.1.0
+kafka-python>=2.0.2
+tenacity>=8.2.0
