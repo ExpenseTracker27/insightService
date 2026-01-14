@@ -5,7 +5,7 @@ description = "Insight Service for expense tracking from messages"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
-    {name = "ExpenseTracker Team"}
+    {name = "Tanishq Trivedi <tanishq.trivedi27@gmail.com>"}
 ]
 dependencies = [
     "fastapi[all]>=0.115.12",
@@ -18,3 +18,5 @@ dependencies = [
 dev = [
     "pytest>=8.3.5",
 ]
+
+[tool.ruff]

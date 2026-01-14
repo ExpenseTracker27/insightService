@@ -33,7 +33,7 @@ class KafkaClient:
             topic: Topic to send to (uses default from settings if None)
             
         Returns:
-            bool: True if message was sent successfully
+            bool: True if the message was sent successfully
         """
         topic = topic or self.default_topic
         try:
